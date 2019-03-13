@@ -3,9 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
-const axios = require('axios')
+import axios from 'axios'
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
 
 new Vue({
   router,
