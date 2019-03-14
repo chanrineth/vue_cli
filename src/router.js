@@ -10,6 +10,8 @@ import Primary from './layouts/Primary'
 
 
 import Index from './views/post/Index'
+import Show from './views/post/Show'
+
 
 
 Vue.use(Router)
@@ -54,6 +56,11 @@ export default new Router({
                     path: '/post/list',
                     name: 'listPost',
                     component: Index
+                },
+                {
+                    path: '/post/show/:id',
+                    name: 'show-post',
+                    component: Show
                 },
 
 
