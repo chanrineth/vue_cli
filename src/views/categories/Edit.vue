@@ -58,8 +58,10 @@
             }
 
         },
+
         mounted(){
             this.getPost()
         },
+
     }
 </script>
