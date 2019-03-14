@@ -9,6 +9,11 @@
         <router-link :to="{name:'user'}">User</router-link>
         |
         <router-link :to="{name:'listPost'}">Post</router-link>
+        |
+        <router-link :to="{name:'create'}">Create</router-link>
+        |
+        <router-link :to="{name:'category-edit'}">Edit Category</router-link>
+
 
     </div>
 </template>

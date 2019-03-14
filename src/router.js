@@ -7,6 +7,9 @@ import User from './views/User'
 import Show_user from './views/Show_user'
 import error404 from './views/errors/error404'
 import Primary from './layouts/Primary'
+import Create from './views/post/Create'
+import CategoryEdit from  './views/categories/Edit.vue'
+import CategoryDelete from  './views/categories/Edit.vue'
 
 
 import Index from './views/post/Index'
@@ -62,7 +65,21 @@ export default new Router({
                     name: 'show-post',
                     component: Show
                 },
-
+                {
+                    path: '/create',
+                    name: 'create',
+                    component: Create
+                },
+                {
+                    path: '/category/edit',
+                    name: 'category-edit',
+                    component: CategoryEdit
+                },
+                {
+                    path: '/category/delete',
+                    name: 'category-delete',
+                    component: CategoryDelete
+                },
 
             ]
         },
